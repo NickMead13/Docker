@@ -1,0 +1,8 @@
+1. Port 8080
+2. Built a docker image using:
+	docker build . -t webapp
+3. Forward a port from 8080 to 8282 using:
+	docker run -p 8080:8282 webapp
+4. Pulled jenkins image to local and ran using:
+	docker pull jenkins/jenkins
+	docker run -p 8080:8080 jenkins/jenkins
